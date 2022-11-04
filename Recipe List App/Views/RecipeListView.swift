@@ -27,7 +27,7 @@ struct RecipeListView: View {
                             .clipped()
                             .cornerRadius(5)
                         Text(r.name)
-                    }
+                    }       
                 })
 
             }
@@ -39,5 +39,6 @@ struct RecipeListView: View {
 struct RecipeListView_Previews: PreviewProvider {
     static var previews: some View {
         RecipeListView()
+            .environmentObject(RecipeModel())
     }
 }
